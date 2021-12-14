@@ -1,20 +1,28 @@
+@use "sass:math";
+
 .card {
   display: block;
   padding: $base-padding;
   border: $base-border-thickness solid #ddd;
   box-shadow: $base-box-shadow;
+  border-radius: calc($base-border-radius / 4);
 
-  .card-title {
-    font-size: $base-font-size;
+  &-title {
+    font-size: $font-size-lg;
     padding-bottom: $base-padding;
     font-weight: bold;
   }
 
-  .card-body {
-    font-size: $base-font-size;
+  &-body {
+    font-size: $font-size-base;
 
     a {
       text-decoration: underline;
     }
   }
 }
+
+@debug calc(100% - $base-padding * 2);
+@debug math.max(1px, 2px, 40px);
+@debug math.min(1px, 2px, 40px);
+@debug math.floor(1.5);

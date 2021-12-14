@@ -1,11 +1,14 @@
 // configuration and helpers (abstracts) variables, mixins and functions
 @import "abstracts/variables";
-@import "abstracts/typography";
+@import "abstracts/mixins";
+
+// Theme colours
+@import "theme/theme";
+@import "theme/colors";
 
 //base styles (reset, font, typography, utilities etc)
 @import "base/base";
-
-//colours
+@import "base/typography";
 
 //layout related sections (navbar, footer, etc)
 

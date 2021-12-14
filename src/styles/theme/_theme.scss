@@ -1,0 +1,66 @@
+//colour palette
+
+$colors: (
+  "primary": (
+    "base": $primary-base,
+    "light": $primary-light,
+    "dark": $primary-dark,
+  ),
+  "secondary": (
+    "base": $secondary-base,
+    "light": $secondary-light,
+    "dark": $secondary-dark,
+  ),
+  "tertiary": (
+    "base": $tertiary-base,
+    "light": $tertiary-light,
+    "dark": $tertiary-dark,
+  ),
+  "error": (
+    "base": $error-base,
+    "light": $error-light,
+    "dark": $error-dark,
+  ),
+  "info": (
+    "base": $info-base,
+    "light": $info-light,
+    "dark": $info-dark,
+  ),
+  "success": (
+    "base": $success-base,
+    "light": $success-light,
+    "dark": $success-dark,
+  ),
+  "warning": (
+    "base": $warning-base,
+    "light": $warning-light,
+    "dark": $warning-dark,
+  ),
+  "white": (
+    "base": $white,
+  ),
+  "blue": (
+    "base": $blue,
+  ),
+  "red": (
+    "base": $red,
+  ),
+  "yellow": (
+    "base": $yellow,
+  ),
+  "green": (
+    "base": $green,
+  ),
+  "orange": (
+    "base": $orange,
+  ),
+  "purple": (
+    "base": $purple,
+  ),
+  "gray": (
+    "base": $gray,
+  ),
+  "black": (
+    "base": $black,
+  ),
+);

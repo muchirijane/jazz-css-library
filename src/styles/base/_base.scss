@@ -38,5 +38,9 @@ img {
 }
 
 .test {
-  color: $primary;
+  color: $primary-base;
+}
+
+.test-btn {
+  background-color: map-get($colors, "primary", "base");
 }

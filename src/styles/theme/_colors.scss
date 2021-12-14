@@ -1,0 +1,42 @@
+//generate classes with the keys in colors
+@each $key, $tags in $colors {
+  @each $tag, $val in $tags {
+    .cl-#{$key}-#{$tag} {
+      color: $val;
+    }
+    .cl-hover-#{$key}-#{$tag} {
+      &:hover {
+        color: $val;
+      }
+    }
+    .bg-#{$key}-#{$tag} {
+      background-color: $val;
+    }
+
+    @if ($val != black and $val != white) {
+      //light variations
+      @for $i from 1 through 5 {
+        .cl-#{$key}-#{$tag}-light-#{$i} {
+          color: mix(white, $val, $i * 10%);
+        }
+        .cl-hover-#{$key}-#{$tag}-light-#{$i} {
+          &:hover {
+            color: mix(white, $val, $i * 10%);
+          }
+        }
+        .bg-#{$key}-#{$tag}-light-#{$i} {
+          background-color: mix(white, $val, $i * 10%);
+        }
+      }
+
+      @for $i from 1 through 5 {
+        .cl-#{$key}-#{$tag}-dark-#{$i} {
+          color: mix(rgb(0, 0, 0), $val, $i * 10%);
+        }
+        .bg-#{$key}-#{$tag}-dark-#{$i} {
+          background-color: mix(black, $val, $i * 10%);
+        }
+      }
+    }
+  }
+}
